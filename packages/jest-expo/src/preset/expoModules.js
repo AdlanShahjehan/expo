@@ -335,7 +335,7 @@ module.exports = {
         ExpoVideoManager: [{ key: 0, argumentsCount: 2, name: 'setFullscreen' }],
         ExpoWebBrowser: [
           { key: 0, argumentsCount: 0, name: 'dismissBrowser' },
-          { key: 1, argumentsCount: 1, name: 'openBrowserAsync' },
+          { key: 1, argumentsCount: 2, name: 'openBrowserAsync' },
           { key: 2, argumentsCount: 0, name: 'dismissAuthSession' },
           { key: 3, argumentsCount: 2, name: 'openAuthSessionAsync' },
         ],
@@ -753,6 +753,29 @@ module.exports = {
   RNBranchEventEmitter: {
     addListener: { type: 'function', functionType: 'async' },
     removeListeners: { type: 'function', functionType: 'async' },
+  },
+  RNCNetInfo: {
+    addListener: { type: 'function', functionType: 'async' },
+    getCurrentConnectivity: { type: 'function', functionType: 'promise' },
+    removeListeners: { type: 'function', functionType: 'async' },
+  },
+  RNCUIWebViewManager: {
+    goBack: { type: 'function', functionType: 'async' },
+    goForward: { type: 'function', functionType: 'async' },
+    injectJavaScript: { type: 'function', functionType: 'async' },
+    postMessage: { type: 'function', functionType: 'async' },
+    reload: { type: 'function', functionType: 'async' },
+    startLoadWithResult: { type: 'function', functionType: 'async' },
+    stopLoading: { type: 'function', functionType: 'async' },
+  },
+  RNCWKWebViewManager: {
+    goBack: { type: 'function', functionType: 'async' },
+    goForward: { type: 'function', functionType: 'async' },
+    injectJavaScript: { type: 'function', functionType: 'async' },
+    postMessage: { type: 'function', functionType: 'async' },
+    reload: { type: 'function', functionType: 'async' },
+    startLoadWithResult: { type: 'function', functionType: 'async' },
+    stopLoading: { type: 'function', functionType: 'async' },
   },
   RNGestureHandlerButton: {},
   RNGestureHandlerModule: {
